@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lista de Nomes</title>
+</head>
+<script>
+    function filtrar() {
+        const filtro = document.getElementById("text").value.toLowerCase();
+        const lis = document.getElementsByTagName("li");
+        for (let li of lis) {
+            if (filtro === '') {
+                li.style.fontWeight = 'normal';
+            }
+            else if (li.innerText.toLowerCase().startsWith(filtro)) {
+                li.style.fontWeight = 'bold';
+            } 
+            else{
+                li.style.fontWeight = 'normal';
+            }  
+        }
+    }
+</script>
+<body>
+    <form>
+        <label for="">Digite um nome:</label>
+        <input type="text" name="text" id="text" oninput="filtrar()">
+    </form>
+    <div>
+        <ul>
+            <li>Ana Laura</li>
+            <li>André</li>
+            <li>Bianca</li>
+            <li>Davi</li>
+            <li>Dolores</li>
+            <li>Emili</li>
+            <li>Enzo</li>
+            <li>Fernanda</li>
+            <li>Gabriel</li>
+            <li>Guilherme</li>
+            <li>Gustavo</li>
+            <li>Henrique</li>
+            <li>Isabelli</li>
+            <li>Joao</li>
+            <li>Julia</li>
+            <li>Kaua</li>
+            <li>Larissa</li>
+            <li>Lucas Antonio</li>
+            <li>Lucas Diniz</li>
+            <li>Luiz Eduardo</li>
+            <li>Luiz Fernando</li>
+            <li>Luna</li>
+            <li>Manuela</li>
+            <li>Maria Helena</li>
+            <li>Matheus Hodecker</li>
+            <li>Matheus Liesenberg</li>
+            <li>Murilo</li>
+            <li>Nicolas</li>
+            <li>Rafaela</li>
+            <li>Raul</li>
+            <li>Renata</li>
+            <li>Sara</li>
+            <li>Vinicius</li>
+        </ul>
+    </div>
+</body>
+</html>
