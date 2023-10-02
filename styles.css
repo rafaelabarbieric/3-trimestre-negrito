@@ -1,0 +1,24 @@
+body{
+    background-color: white;
+}
+div{
+    text-align: start;
+    border: 1px solid #ACE8CC;
+    margin-left: 750px;
+    margin-right: 750px;
+    background-color: #ACE8CC;
+    
+}
+form{
+    margin-top: 50px;
+    text-align: center;
+    border: 1px solid #ACE8CC;
+    margin-left: 750px;
+    margin-right: 750px;
+    background-color: #ACE8CC;
+    
+}
+ul{
+    list-style: none;
+}
+
